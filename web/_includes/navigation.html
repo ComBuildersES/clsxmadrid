@@ -1,0 +1,50 @@
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <!--<i class="fa fa-play-circle"></i>--> <img src="img/cls.png" height="32" alt="" style="display: inline;"/> <span class="light">CLSx</span>Madrid
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <!--
+                <li>
+                    <a href="http://goo.gl/forms/qe6Dj5a8Qk">Register</a>
+                </li>
+              -->
+                <li>
+                    <a class="page-scroll" href="#about">{% case page.language %} {% when 'es' %}Información{% else %}About{% endcase %}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#agenda">Agenda</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#venue">{% case page.language %} {% when 'es' %}Lugar{% else %}Venue{% endcase %}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#organization">{% case page.language %} {% when 'es' %}Equipo{% else %}Team{% endcase %}</a>
+                </li>
+                <li>
+                  {% case page.language %}
+                  {% when 'es' %}
+                    <a href="index.en.html"><small lang="en">Switch to English</small></a>
+                  {% else %}
+                    <a href="index.es.html"><small lang="es">Cambiar a Español</small></a>
+                  {% endcase %}
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

@@ -1,0 +1,14 @@
+# Site settings
+title: Community Leadership Summit Madrid (CLSxMadrid)
+email: jsmanrique@bitergia.com
+description: "Community Leadership Summit Madrid edition brings together community leaders, organizers and managers and the projects and organizations that are interested in growing and empowering a strong community"
+description_es: "El Community Leaderhsip Summit, edición Madrid, agrupa líderes, gestores y organizadores de comunidades y los proyectos y organizaciones que están interesadas en hacer crecer y generar comunidades fuertes."
+baseurl: ""
+url: "http://www.clsxmadrid.es"
+author: "Manrique Lopez"
+
+include: [.htaccess]
+
+# Build settings
+markdown: kramdown
+permalink: pretty

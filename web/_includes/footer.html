@@ -1,0 +1,31 @@
+<!-- Footer -->
+<footer>
+    <div class="container text-center darkbg-section" style="position: absolute;">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <h3>Sponsors</h3>
+                <div class="row">
+                  <div class="col-sm-6"><a href="http://bitergia.com"><img src="img/bitergia-logo.png" class="img-responsive" alt="Bitergia"/></a></div>
+                  <div class="col-sm-6"><a href="http://www.gacetatecnologica.com"><img src="img/logo-gaceta.png" class="img-responsive" alt="Gaceta Tecnológica"></a></div>
+                </div>
+                {% case page.language %}
+                {% when 'es' %}
+                  <p>Si quieres esponsorizar,  <strong><a href="mailto:jsmanrique@bitergia.com">escríbenos</a></strong>.</p>
+                {% else %}
+                  <p>If you would like to sponsor, <strong>please <a href="mailto:jsmanrique@bitergia.com">email us</a></strong>.</p>
+                {% endcase %}
+            </div>
+            <div class="col-lg-4" style="text-align: left;">
+              {% case page.language %}
+              {% when 'es' %}
+                <p>El <span lang="en">Community Leadership Summit</lang> siempre ha tenido una serie de valores para crear un entorno ideal donde compartir y aprender buenas prácticas de comunidad.</p>
+                <p>Por eso siempre será abierto y de acceso gratuito, y un encuentro neutral para compañías. Cada sponsor apoya y respesta estos valores y contribuye ayudando a hacerlo posible. ¡Muchas gracias!</p>
+              {% else %}
+                <p>The Community Leadership Summit has always had a set of key values in place to create the ideal environment for sharing and learning great community best practice.</p>
+                <p>This is that we will always be an open, freely accessible, vendor-neutral event, and each of our sponsors supports and respects these values and contributes to help make the event happen. Thanks!</p>
+              {% endcase %}
+            </div>
+        </div>
+        <p style="margin-top: 1em;">Copyright &copy; Community Leadership Summit Madrid 2015</p>
+    </div>
+</footer>
