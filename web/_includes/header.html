@@ -4,21 +4,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="brand-heading">CLSxMadrid</h1>
+                    <h1 class="brand-heading">CLSxMadrid 2016</h1>
                     <p class="intro-text">Community Leadership Summit Madrid</p>
-                    <!-- Add info for new meeting
-                    <p>Campus Madrid - December, 12<sup>th</sup></p>
-                    <p><a href="" class="btn btn-default btn-lg">Register now!</a></p>
-                  -->
+                    <!-- Add info for new meeting -->
+                    {% case page.language %}
+                    {% when 'es' %}
+                      <p>{{site.data.venue.name}} - 17, Nov</p>
+                      <p><a href="https://www.eventbrite.com/e/clsxmadrid-2016-tickets-27598551009" class="btn btn-default btn-lg">¡Regístrate <strong>ya</strong>!</a></p>
+                    {% else %}
+                      <p>{{site.data.venue.name}} - Nov, 17<sup>th</sup></p>
+                      <p><a href="https://www.eventbrite.com/e/clsxmadrid-2016-tickets-27598551009" class="btn btn-default btn-lg">Register <strong>now</strong>!</a></p>
+                    {% endcase %}
                     <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
 
-                <div class="col-md-6"><!--
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="http://cdnapi.kaltura.com/p/811441/sp/81144100/embedIframeJs/uiconf_id/30323531/partner_id/811441?iframeembed=true&amp;playerId=kaltura_player_1436250705&amp;entry_id=0_f07eyxbn&amp;flashvars[akamaiHD.loadingPolicy]=preInitialize&amp;flashvars[akamaiHD.asyncInit]=true&amp;flashvars[twoPhaseManifest]=true&amp;flashvars[streamerType]=hdnetworkmanifest" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                    </div> -->
+                <div class="col-md-6">
                     <img src="img/cls.png" class="img-responsive" alt="">
                 </div>
 

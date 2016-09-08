@@ -11,80 +11,47 @@ permalink: index.es.html
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Agenda</h2>
-          <!--
           <table class="table" style="text-align: left;">
             <tbody>
               <tr>
-                <th>9:00 - 9:30</th>
-                <td colspan="2">Registration</td>
-              </tr>
-              <tr>
-                <th>9:30 - 10:00</th>
-                <td>Openning</td>
-                <td>Organization team</td>
-              </tr>
-              <tr>
-                <th>10:00 - 10:30</th>
-                <td>"<em>What Science Fiction Can Teach us About Building Communities</em>"</td>
-                <td><a href="http://twitter.com/geekygirldawn">Dawn Foster</a></td>
-              </tr>
-              <tr>
-                <th>10:30 - 11:00</th>
-                <td>"<em">Leadership"</em></td>
-                <td><a href="https://twitter.com/pinchito">Alex Fernández</a></td>
-              </tr>
-              <tr>
-                <th>11:00 - 11:15</th>
-                <td colspan="2">Coffee break</td>
-              </tr>
-              <tr>
-                <th>11:15 - 11:45</th>
-                <td>"<em lang="es">Midiendo la actividad en comunidades de desarrollo de software</em>"</td>
-                <td><a href="http://twitter.com/jgbarah">Jesús M. González-Barahona</a></td>
-              </tr>
-              <tr>
-                <th>11:45 - 12:15</th>
-                <td>"<em>Where is Wilma?"</em></td>
-                <td><a href="https://twitter.com/laura_morillo">Laura Morillo</a></td>
-              </tr>
-              <tr>
-                <th>12:15 - 12:45</th>
-                <td>"<em lang="en"><abbr title="Google Developers Group">GDG</abbr> Spain in action"</em></td>
-                <td><a href="http://google.com/+AlbertoGutierrezJuanes">Alberto J Gutierrez Juanes</a></td>
-              </tr>
-              <tr>
-                <th>12:45 - 13:15</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>13:15 - 14:00</th>
-                <td colspan="2">Lunch</td>
-              </tr>
-              <tr>
-                <th>14:00 - 14:30</th>
-                <td><em>Unconference</em> set up</td>
-                <td>Organization team</td>
-              </tr>
-              <tr>
-                <th>14:30 - 17:30</th>
-                <td colspan="2"><em>Unconference</em></td>
+                <th>17:00 - 17:30</th>
+                <td colspan="2">Registro</td>
               </tr>
               <tr>
                 <th>17:30 - 18:00</th>
-                <td><em>Recap</em></td>
-                <td>Organization team</td>
+                <td colspan="2">Apertura</td>
               </tr>
               <tr>
-                <th>18:30 - ...</th>
-                <td colspan="2"><em lang="en">Community Party</em></td>
+                <th>18:00 - 19:20</th>
+                <td colspan="2">Charlas técnicas</td>
+              </tr>
+              <tr>
+                <th>19:30 - 20:30</th>
+                <td colspan="2">Desconferencia</td>
+              </tr>
+              <tr>
+                <th>20:30 - 21:00</th>
+                <td colspan="2">Recapitulación</td>
+              </tr>
+              <tr>
+                <th>21:00 - ...</th>
+                <td colspan="2"><em>¡Quién sabe!</em></td>
               </tr>
             </tbody>
           </table>
-        -->
-          <!-- <p><a href="" class="btn btn-default btn-lg">Register now!</a></p> -->
+          <p><a href="https://www.eventbrite.com/e/clsxmadrid-2016-tickets-27598551009" class="btn btn-default btn-lg">Regístrate <strong>ya</strong>!</a></p>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-4"><p>Encuentro esponsorizado por:</p></div>
+        <div class="col-md-8">
+          {% for sponsor in site.data.06_2016_sponsors %}
+          <div class="col-sm-2"><a href="{{sponsor.url}}"><img src="img/{{sponsor.logo}}" class="img-responsive" alt="{{sponsor.name}}"></a></div>
+          {% endfor %}
+        </div>
+      </div>
+
       <div class="row">
         <h3>Última edición <small><abbr title="Diciembre">Dic.</abbr> 2015</small></h3>
         <div class="col-lg-4">
@@ -105,10 +72,12 @@ permalink: index.es.html
           </table>
         </div>
         <div class="row">
-          <p>Encuentro esponsorizado por:</p>
-          {% for sponsor in site.data.12_2015_sponsors %}
-          <div class="col-sm-2"><a href="{{sponsor.url}}"><img src="img/{{sponsor.logo}}" class="img-responsive" alt="{{sponsor.name}}"></a></div>
-          {% endfor %}
+          <div class="col-md-4"><p>Encuentro esponsorizado por:</p></div>
+          <div class="col-md-8">
+            {% for sponsor in site.data.12_2015_sponsors %}
+            <div class="col-sm-2"><a href="{{sponsor.url}}"><img src="img/{{sponsor.logo}}" class="img-responsive" alt="{{sponsor.name}}"></a></div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

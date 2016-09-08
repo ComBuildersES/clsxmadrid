@@ -34,6 +34,11 @@ $('.navbar-collapse ul li a').click(function() {
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
+    var venue = {
+      name: $('#venue .hidden.name').text(),
+      url: $('#venue .address a').attr('href'),
+      address: $('#venue .address').text()
+    };
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -41,14 +46,14 @@ function init() {
         zoom: 17,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.412767, -3.718247), // New York
+        center: new google.maps.LatLng($('#map span.lat').text(), $('#map span.long').text()), // lat, long coords
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
@@ -160,7 +165,7 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
@@ -169,17 +174,19 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.412767, -3.718247);
+    //var myLatLng = new google.maps.LatLng($('#map span.lat').text(), $('#map span.long').text());
+    var myLatLng = mapOptions.center;
+
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image,
-        title: 'Campus Madrid'
+        title: venue.name
     });
-    
+
     // InfoWindow
     var infowindow = new google.maps.InfoWindow({
-        content: '<p><strong>Campus Madrid</strong></p><a href="https://goo.gl/maps/HxgivDWEsKp"><address>Calle Moreno Nieto, 2, 28005 Madrid</address></a>'
+        content: '<p><strong>'+venue.name+'</strong></p><a href="'+venue.url+'"><address>'+venue.address+'</address></a>'
     });
     beachMarker.addListener('click', function() {
         infowindow.open(map, beachMarker);
