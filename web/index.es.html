@@ -21,10 +21,15 @@ permalink: index.es.html
                 <th>17:30 - 18:00</th>
                 <td colspan="2">Apertura</td>
               </tr>
+
+              {% for talk in site.data.11_2016_agenda %}
               <tr>
-                <th>18:00 - 19:20</th>
-                <td colspan="2">Charlas técnicas</td>
+                <th>{{talk.slot}}</th>
+                <td>{{talk.title}}</td>
+                <td><a href="{{talk.speaker_url}}">{{talk.speaker}}</a></td>
               </tr>
+              {% endfor %}
+
               <tr>
                 <th>19:30 - 20:30</th>
                 <td colspan="2">Desconferencia</td>
