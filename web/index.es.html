@@ -26,7 +26,7 @@ permalink: index.es.html
               <tr>
                 <th>{{talk.slot}}</th>
                 <td>{{talk.title}}</td>
-                <td><a href="{{talk.speaker_url}}">{{talk.speaker}}</a></td>
+                <td>{% for speaker in talk.speakers %}<a href="{{speaker.url}}">{{speaker.name}} </a> {% endfor %}</td>
               </tr>
               {% endfor %}
 
@@ -70,7 +70,7 @@ permalink: index.es.html
               {% for talk in site.data.12_2015_agenda %}
               <tr>
                 <td class="text-left"><a href="{{talk.slides}}">{{talk.title}}</a></td>
-                <td class="text-right"><a href="{{talk.speaker_url}}">{{talk.speaker}}</a></td>
+                <td class="text-right">{% for speaker in talk.speakers %}<a href="{{speaker.url}}">{{speaker.name}} </a> {% endfor %}</td>
               </tr>
               {% endfor %}
             </tbody>

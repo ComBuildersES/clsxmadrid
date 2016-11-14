@@ -2,20 +2,26 @@
 - slot: 18:00 - 18:20
   title: Building on the 3 community pillars
   slides:
-  speaker: Daniel Franc
-  speaker_url: http://twitter.com/danfranc
+  speakers:
+    - name: Daniel Franc
+      url: http://twitter.com/danfranc
 - slot: 18:20 - 18:40
   title: Data science for Community Managers
   slides:
-  speaker: J. Manrique López
-  speaker_url: https://twitter.com/jsmanrique
+  speakers:
+    - name: J. Manrique López
+      url: https://twitter.com/jsmanrique
 - slot: 18:40 - 19:00
   title: Cicerón y las comunidades tecnológicas
   slides:
-  speaker: Yamila Moreno
-  speaker_url: http://twitter.com/yamila_moreno
+  speakers:
+    - name: Yamila Moreno
+      url: http://twitter.com/yamila_moreno
 - slot: 19:00 - 19:20
   title: Organizar en 2 meses un evento anual de 120 personas <span class="hidden">y seguir haciéndolo 3 años después</span>
   slides:
-  speaker: Laura Lacarra
-  speaker_url: http://twitter.com/LauraLacarra
+  speakers:
+    - name: Laura Lacarra
+      url: http://twitter.com/LauraLacarra
+    - name: Dani Latoree
+      url: https://twitter.com/dani_latorre

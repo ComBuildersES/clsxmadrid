@@ -2,24 +2,29 @@
 - slot: 10:00 - 10:30
   title: What Science Fiction Can Teach us About Building Communities
   slides: http://www.slideshare.net/geekygirldawn/scifi-and-community-for-clsx-madrid
-  speaker: Dawn Foster
-  speaker_url: http://twitter.com/geekygirldawn
+  speakers:
+    - name: Dawn Foster
+      url: http://twitter.com/geekygirldawn
 - slot: 10:30 - 11:00
   title: Leadership
   slides: http://slides.com/alexfernandez/leadership-clsxmadrid-2015#/
-  speaker: Alex Fernández
-  speaker_url: https://twitter.com/pinchito
+  speakers:
+    - name: Alex Fernández
+      url: https://twitter.com/pinchito
 - slot: 11:15 - 11:45
   title: Midiendo la actividad en comunidades de desarrollo de software
   slides: https://speakerdeck.com/jgbarah/open-source-software-projects
-  speaker: Jesús M. González-Barahona
-  speaker_url: http://twitter.com/jgbarah
+  speakers:
+    - name: Jesús M. González-Barahona
+      url: http://twitter.com/jgbarah
 - slot: 11:45 - 12:15
   title: Where is Wilma?
   slides: http://es.slideshare.net/LauraMorilloVelardeR/wheres-wilma
-  speaker: Laura Morillo
-  speaker_url: https://twitter.com/laura_morillo
+  speakers:
+    - name: Laura Morillo
+      url: https://twitter.com/laura_morillo
 - slot: 12:15 - 12:45
   title: <abbr title="Google Developers Group">GDG</abbr> Spain in action
-  speaker: Alberto J Gutierrez Juanes
-  speaker_url: http://google.com/+AlbertoGutierrezJuanes
+  speakers:
+    - name: Alberto J Gutierrez Juanes
+      url: http://google.com/+AlbertoGutierrezJuanes
