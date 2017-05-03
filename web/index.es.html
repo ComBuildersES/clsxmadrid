@@ -14,40 +14,36 @@ permalink: index.es.html
           <table class="table" style="text-align: left;">
             <tbody>
               <tr>
-                <th>17:00 - 17:30</th>
-                <td colspan="2">Registro</td>
+                <th>18:00 - 18:30</th>
+                <td>Registro</td>
               </tr>
               <tr>
-                <th>17:30 - 18:00</th>
-                <td colspan="2">Apertura</td>
-              </tr>
-
-              {% for talk in site.data.11_2016_agenda %}
-              <tr>
-                <th>{{talk.slot}}</th>
-                <td>{{talk.title}}</td>
-                <td>{% for speaker in talk.speakers %}<a href="{{speaker.url}}">{{speaker.name}} </a> {% endfor %}</td>
-              </tr>
-              {% endfor %}
-
-              <tr>
-                <th>19:30 - 20:30</th>
-                <td colspan="2">Desconferencia</td>
-              </tr>
-              <tr>
-                <th>20:30 - 21:00</th>
-                <td colspan="2">Recapitulación</td>
-              </tr>
-              <tr>
-                <th>21:00 - ...</th>
-                <td colspan="2"><em>¡Quién sabe!</em></td>
+                <th>18:30 - 20:00</th>
+                <td>¡¡ Desconferencia 100% !!</td>
               </tr>
             </tbody>
           </table>
-          <p><a href="https://www.eventbrite.com/e/clsxmadrid-2016-tickets-27598551009" class="btn btn-default btn-lg">Regístrate <strong>ya</strong>!</a></p>
+          <p><a href="" class="btn btn-default btn-lg">Regístrate <strong>ya</strong>!</a></p>
         </div>
       </div>
 
+      <h3>Últimas ediciones</h3>
+
+      <div class="row">
+        <h4><abbr title="Noviembre">Nov.</abbr> 2016</h4>
+        <div class="col-lg-12">
+          <table class="table">
+            <tbody>
+              {% for talk in site.data.11_2016_agenda %}
+              <tr>
+                <td class="text-left">{{talk.title}}</td>
+                <td class="text-right">{% for speaker in talk.speakers %}<a href="{{speaker.url}}">{{speaker.name}} </a> {% endfor %}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4"><p>Encuentro esponsorizado por:</p></div>
         <div class="col-md-8">
@@ -58,7 +54,7 @@ permalink: index.es.html
       </div>
 
       <div class="row">
-        <h3>Última edición <small><abbr title="Diciembre">Dic.</abbr> 2015</small></h3>
+        <h4><abbr title="Diciembre">Dic.</abbr> 2015</h4>
         <div class="col-lg-4">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://www.youtube.com/embed/WRySh99JQdg" frameborder="0" allowfullscreen></iframe>
